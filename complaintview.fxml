@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test3.complaintview">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="172.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="123.0" fitWidth="137.0" layoutX="25.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="E:\Complete Java\pngwing.com.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="BackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#OnClickBackButton" prefHeight="39.0" prefWidth="43.0" style="-fx-background-color: #1E90FF; -fx-border-radius: 10px; -fx-border-color: #FFFFFF;" text="&lt;-">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="55.0" layoutY="200.0" text="IESCO">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="468.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="19.0" layoutY="23.0" prefHeight="354.0" prefWidth="389.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30px;">
+               <children>
+                  <Label layoutX="19.0" layoutY="18.0" text="Consumer Complaint">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="99.0" text="Consumer Name:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="126.0" text="Complaint Nature:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="154.0" text="Complaint:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="182.0" text="Complaint Date:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="208.0" text="Complaint Status:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="namelabel" layoutX="158.0" layoutY="100.0" text="e.g Talha Khan">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="naturelabel" layoutX="168.0" layoutY="126.0" text="e.g meter issue">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="complaintlabel" layoutX="112.0" layoutY="155.0" text="e.g meter connection has some fault">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="datelabel" layoutX="156.0" layoutY="182.0" text="e.g 2023-01-01">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <MenuButton fx:id="statusbar" layoutX="173.0" layoutY="206.0" mnemonicParsing="false" style="-fx-background-radius: 10px;" text="Status">
+                    <items>
+                      <MenuItem fx:id="ResolvedMenu" mnemonicParsing="false" onAction="#OnClickResolved" text="Resolved" />
+                      <MenuItem fx:id="UnResolvedMenu" mnemonicParsing="false" onAction="#OnClickUnResolved" text="Un-resolved" />
+                    </items>
+                  </MenuButton>
+                  <Button fx:id="UpdateButton" layoutX="294.0" layoutY="306.0" mnemonicParsing="false" onAction="#OnClickUpdateButton" prefHeight="30.0" prefWidth="81.0" style="-fx-background-color: #1E90FF; -fx-background-radius: 10px;" text="Update">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test3.LodgeComplaint">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="171.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="BackButton" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#OnClickBackButton" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #1E90FF; -fx-border-color: #FFFFFF; -fx-border-radius: 10px;" text="&lt;-">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="125.0" fitWidth="138.0" layoutX="23.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="E:\Complete Java\pngwing.com.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="55.0" layoutY="226.0" text="IESCO">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="482.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="21.0" layoutY="23.0" prefHeight="357.0" prefWidth="387.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30px;">
+               <children>
+                  <Label layoutX="21.0" layoutY="18.0" text="Lodge Complaint">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="119.0" />
+                  <TableView fx:id="ComplaintTable" layoutX="18.0" layoutY="88.0" prefHeight="120.0" prefWidth="351.0" style="-fx-background-color: #FFFFFF;">
+                    <columns>
+                      <TableColumn fx:id="NatureColumn" prefWidth="116.00000381469727" style="-fx-background-color: #FFFFFF;" text="Complaint Nature" />
+                      <TableColumn fx:id="ContentColumn" prefWidth="164.0000457763672" style="-fx-background-color: #FFFFFF;" text="Content" />
+                        <TableColumn fx:id="DateColumn" prefWidth="69.33331298828125" style="-fx-background-color: #FFFFFF;" text="Date" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="22.0" layoutY="67.0" text="Your Complaints">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="206.0" layoutY="209.0" text="Complaint Nature">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="209.0" text="Complaint Content">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="contentfield" layoutX="22.0" layoutY="232.0" prefHeight="103.0" prefWidth="143.0" />
+                  <TextField fx:id="naturefield" layoutX="206.0" layoutY="232.0" />
+                  <Button fx:id="LodgeButton" layoutX="281.0" layoutY="299.0" mnemonicParsing="false" onAction="#OnClickLodgeButton" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #1E90FF; -fx-background-radius: 10px;" text="Lodge">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="CancelButton" layoutX="187.0" layoutY="299.0" mnemonicParsing="false" onAction="#OnClickCancelButton" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #1E90FF; -fx-background-radius: 10px;" text="Cancel">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

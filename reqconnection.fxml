@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test3.reqconnection">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="179.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="BackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#OnClickBackButton" prefHeight="42.0" prefWidth="51.0" style="-fx-background-color: #1E90FF; -fx-border-color: #FFFFFF; -fx-border-radius: 10px;" text="&lt;--">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="131.0" fitWidth="142.0" layoutX="24.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="E:\Complete Java\pngwing.com.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="59.0" layoutY="219.0" text="IESCO">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="599.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="19.0" layoutY="21.0" prefHeight="357.0" prefWidth="382.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30px;">
+               <children>
+                  <Label layoutX="24.0" layoutY="22.0" text="Request Connection">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="159.0" text="Meter Type">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <MenuButton fx:id="TypeMenu" layoutX="24.0" layoutY="180.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" style="-fx-background-radius: 30px;" text="Meter Type">
+                    <items>
+                      <MenuItem fx:id="OnePhaseMenu" mnemonicParsing="false" onAction="#OnClickOnePhaseMenu" text="1-Phase" />
+                      <MenuItem fx:id="ThreePhaseMenu" mnemonicParsing="false" onAction="#OnClickThreePhaseMenu" text="3-Phase" />
+                    </items>
+                  </MenuButton>
+                  <Label layoutX="24.0" layoutY="71.0" text="Thank You For Applying For New Connection">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="90.0" prefHeight="19.0" prefWidth="344.0" text="Fill Out The Details Of The Form For Confirmation">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ApplyButton" layoutX="271.0" layoutY="301.0" mnemonicParsing="false" onAction="#OnClickApplyButton" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #1E90FF; -fx-background-radius: 10px;" text="Apply">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="CancelButton" layoutX="177.0" layoutY="301.0" mnemonicParsing="false" onAction="#OnClickCancelButton" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #1E90FF; -fx-background-radius: 10px;" text="Cancel">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Button>
+                  <MenuButton fx:id="connectiontype" layoutX="200.0" layoutY="180.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" style="-fx-background-radius: 30px;" text="Connection Type">
+                    <items>
+                      <MenuItem fx:id="DomesticMenu" mnemonicParsing="false" onAction="#OnClickDomesticMenu" text="Domestic" />
+                      <MenuItem fx:id="CommercialMenu" mnemonicParsing="false" onAction="#OnClickCommercialMmenuenu" text="Commercial" />
+                        <MenuItem fx:id="IndustrialMenu" mnemonicParsing="false" onAction="#OnClickIndustrialMenu" text="Industrial" />
+                    </items>
+                  </MenuButton>
+                  <Label layoutX="202.0" layoutY="159.0" text="Connection Type">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

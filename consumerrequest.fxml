@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test3.consumerrequest">
+   <children>
+      <AnchorPane layoutX="23.0" layoutY="24.0" prefHeight="356.0" prefWidth="385.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30px;">
+         <children>
+            <Label layoutX="24.0" layoutY="20.0" text="Consumer Requests">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="RequestTable" layoutX="24.0" layoutY="124.0" prefHeight="207.0" prefWidth="339.0" style="-fx-background-color: #FFFFFF;">
+              <columns>
+                <TableColumn fx:id="ConsumerIdColumn" prefWidth="80.00002670288086" style="-fx-background-color: #FFFFFF;" text="ConsumerID" />
+                  <TableColumn fx:id="ConsumerNameColumn" prefWidth="169.33330535888672" style="-fx-background-color: #FFFFFF;" text="Consumer Name" />
+                <TableColumn fx:id="RequestDateColumn" prefWidth="89.33331298828125" style="-fx-background-color: #FFFFFF;" text="Request Date" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

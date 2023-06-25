@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test3.generatebill">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="187.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="BackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#OnClickBackButton" prefHeight="37.0" prefWidth="40.0" style="-fx-background-color: #1E90FF; -fx-border-color: #FFFFFF; -fx-border-radius: 10px;" text="&lt;-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="115.0" fitWidth="151.0" layoutX="36.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="E:\Complete Java\pngwing.com.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="63.0" layoutY="200.0" text="IESCO">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="28.0" layoutY="26.0" prefHeight="353.0" prefWidth="356.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30px;">
+               <children>
+                  <Label layoutX="24.0" layoutY="22.0" text="Bill Recipt">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="PrintButton" layoutX="251.0" layoutY="309.0" mnemonicParsing="false" onAction="#OnClickPrintButton" prefHeight="18.0" prefWidth="79.0" style="-fx-background-color: #1E90FF; -fx-background-radius: 10px;" text="Print">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="23.0" layoutY="97.0" text="Bill Number: ">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="115.0" text="Consumer Name:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="133.0" text="Address:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="152.0" text="Billing Month:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="187.0" text="Due Date:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="169.0" text="Reading Date:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="205.0" text="Units Consumed:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="223.0" text="GST:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="241.0" text="Amount:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="259.0" text="Total Amount Before Due Date:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="277.0" text="Total Amount After Due Date:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="BillNumberLabel" layoutX="105.0" layoutY="97.0" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ConsumerLabel" layoutX="133.0" layoutY="115.0" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="AddressLabel" layoutX="82.0" layoutY="133.0" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MonthLabel" layoutX="110.0" layoutY="152.0" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ReadingDateLabel" layoutX="116.0" layoutY="169.0" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="DueDateLabel" layoutX="86.0" layoutY="187.0" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="UnitLabel" layoutX="124.0" layoutY="205.0" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TariffLabel" layoutX="56.0" layoutY="223.0" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="AmountLabel" layoutX="82.0" layoutY="241.0" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TotalAmountDueLabel" layoutX="220.0" layoutY="259.0" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TotalAmountAfterLabel" layoutX="209.0" layoutY="277.0" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="206.0" layoutY="241.0" opacity="0.35" text="(Exclusive of Tax)">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TaxLabel" layoutX="206.0" layoutY="222.0" opacity="0.35" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </right>
+</BorderPane>

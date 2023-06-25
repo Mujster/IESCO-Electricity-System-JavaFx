@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test3.billinghistory">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="185.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="62.0" layoutY="200.0" text="IESCO">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="123.0" fitWidth="162.0" layoutX="31.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="E:\Complete Java\pngwing.com.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="BackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#OnClickBackButton" prefHeight="36.0" prefWidth="40.0" style="-fx-background-color: #1E90FF; -fx-border-color: #FFFFFF; -fx-border-radius: 10px;" text="&lt;-">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="417.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="34.0" layoutY="33.0" prefHeight="337.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30px;">
+               <children>
+                  <Label layoutX="25.0" layoutY="22.0" text="Billing History">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="56.0" text="Current Billing Month:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MonthLabel" layoutX="200.0" layoutY="56.0" text="Label">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="UsageTable" layoutX="25.0" layoutY="84.0" prefHeight="240.0" prefWidth="303.0" style="-fx-background-color: #FFFFFF;">
+                     <columns>
+                        <TableColumn fx:id="DateColumn" prefWidth="75.0" style="-fx-background-color: #FFFFFF;" text="Date" />
+                        <TableColumn fx:id="CNICColumn" prefWidth="75.0" style="-fx-background-color: #FFFFFF;" text="CNIC" />
+                        <TableColumn fx:id="UnitColumn" prefWidth="75.0" style="-fx-background-color: #FFFFFF;" text="Units" />
+                        <TableColumn fx:id="BillAmountColumn" prefWidth="75.0" style="-fx-background-color: #FFFFFF;" text="Amount" />
+                        <TableColumn fx:id="billstatus" prefWidth="75.0" style="-fx-background-color: #FFFFFF;" text="Status" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

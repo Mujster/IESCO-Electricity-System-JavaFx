@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="429.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test3.addconnection">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="24.0" prefHeight="351.0" prefWidth="389.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30px;">
+         <children>
+            <Label layoutX="24.0" layoutY="22.0" text="Add Connection">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="119.0" text="Consumer ID">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="186.0" text="Connection Type">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="197.0" layoutY="186.0" text="Meter Type">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ConsumerIdField" layoutX="24.0" layoutY="140.0" prefHeight="27.0" prefWidth="160.0" />
+            <MenuButton fx:id="ConnectionType" layoutX="26.0" layoutY="216.0" mnemonicParsing="false" onAction="#OnClickConnectionType" style="-fx-background-radius: 30px;" text="Connection Type">
+              <items>
+                <MenuItem fx:id="DomesticMenu" mnemonicParsing="false" onAction="#OnClickDomesticMenu" text="Domestic" />
+                <MenuItem fx:id="CommericalMenu" mnemonicParsing="false" onAction="#OnClickCommericalMenu" text="Commercial" />
+                  <MenuItem fx:id="IndustrialMenu" mnemonicParsing="false" onAction="#OnClickIndustrialMenu" text="Industrial" />
+              </items>
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="MeterType" layoutX="197.0" layoutY="216.0" mnemonicParsing="false" onAction="#OnClickMeterType" prefHeight="25.0" prefWidth="135.0" style="-fx-background-radius: 30px;" text="Meter Type">
+              <items>
+                <MenuItem fx:id="OnePhaseMenu" mnemonicParsing="false" onAction="#OnClickOnePhaseMenu" text="1-Phase" />
+                <MenuItem fx:id="ThreePhaseMenu" mnemonicParsing="false" onAction="#OnClickThreePhaseMenu" text="3-Phase" />
+              </items>
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </MenuButton>
+            <Button fx:id="CancelButton" layoutX="184.0" layoutY="301.0" mnemonicParsing="false" onAction="#OnClickCancelButton" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #1E90FF; -fx-background-radius: 30px;" text="Cancel">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddButton" layoutX="282.0" layoutY="301.0" mnemonicParsing="false" onAction="#OnClickAddButton" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #1E90FF; -fx-background-radius: 30px;" text="Add">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="ExistsLabel" layoutX="128.0" layoutY="122.0" opacity="0.71" prefHeight="15.0" prefWidth="57.0">
+               <font>
+                  <Font name="Arial Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="209.0" layoutY="119.0" text="Meter Number">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="MeterNumber" layoutX="209.0" layoutY="141.0" prefHeight="27.0" prefWidth="160.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

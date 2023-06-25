@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test3.updatestatus">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="175.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="BackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#OnClickBackButton" prefHeight="43.0" prefWidth="48.0" style="-fx-background-color: #1E90FF; -fx-border-radius: 10px; -fx-border-color: #FFFFFF;" text="&lt;-">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="113.0" fitWidth="144.0" layoutX="31.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="E:\Complete Java\pngwing.com.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="57.0" layoutY="210.0" text="IESCO">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="505.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="23.0" layoutY="23.0" prefHeight="354.0" prefWidth="378.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30px;">
+               <children>
+                  <Label layoutX="22.0" layoutY="20.0" text="Update Billing Status">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="121.0" text="Consumer ID">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="202.0" layoutY="121.0" text="Bill ID">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="BillExists" layoutX="259.0" layoutY="124.0" opacity="0.67" prefHeight="16.0" prefWidth="81.0">
+                     <font>
+                        <Font name="Arial Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <MenuButton fx:id="Status" layoutX="21.0" layoutY="230.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="151.0" style="-fx-background-radius: 30px;" text="Billing Status">
+                    <items>
+                      <MenuItem fx:id="Paid" mnemonicParsing="false" onAction="#OnClickPaid" text="Paid" />
+                      <MenuItem fx:id="UnPaid" mnemonicParsing="false" onAction="#OnClickUnPaid" text="Un-Paid" />
+                    </items>
+                  </MenuButton>
+                  <Label fx:id="ConsumerExists" layoutX="127.0" layoutY="124.0" opacity="0.7" prefHeight="16.0" prefWidth="51.0">
+                     <font>
+                        <Font name="Arial Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ConsumerId" layoutX="22.0" layoutY="151.0" />
+                  <TextField fx:id="BillId" layoutX="202.0" layoutY="151.0" />
+                  <Label layoutX="22.0" layoutY="201.0" text="Billing Status">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="CancelButton" layoutX="179.0" layoutY="305.0" mnemonicParsing="false" onAction="#OnClickCancelButton" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #1E90FF; -fx-background-radius: 10px;" text="Cancel">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="UpdateButton" layoutX="277.0" layoutY="305.0" mnemonicParsing="false" onAction="#OnClickUpdateButton" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #1E90FF; -fx-background-radius: 10px;" text="Update">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
