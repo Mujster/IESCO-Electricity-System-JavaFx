@@ -44,7 +44,7 @@ IESCO Electricity Billing System is a desktop-based software application designe
   - Both consumers and employees can log out from the system after completing their tasks.
  
 # Screenshots
-[Image](1.PNG)
+[Image](/pictures/1.PNG)
 [Image](2.PNG)
 [Image](3.PNG)
 [Image](4.PNG)
